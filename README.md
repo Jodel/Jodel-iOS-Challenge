@@ -17,8 +17,6 @@ JodelChallenge is an app for showing [Flickr](https://www.flickr.com) pictures i
 
 Remember, our goal is not to *compare* and *grade* the projects, but to get to know you better. We care about the quality, not quantity, we don't want you to waste your precious time.
 
-Use Swift.
-
 ### Interface
 
 We don't *"grade"* projects based on how much time you've spent designing and polishing UI so don't waste time on that. All we care about is *tidiness* of the UI: equal margins, logical view hierarchy, logical layout constraints.
@@ -27,17 +25,15 @@ Use Auto Layout when possible.
 
 ### Architecture
 
-
 • The project should follow the SOLID principles.
-
-• The project should be very easy to unit test. The project should have at least one unit test
 
 • The current boilerplate code has some Objective-C code. You can rewrite it to Swift or keep it as it is.
 
-• Support error scenarios by simply showing an alert view (or some toast view)
+• Support error scenarios by simply showing an alert view (or some toast view).
 
-• Feel free to use any third-party libraries
+• Feel free to use any third-party libraries.
 
+• The project should be very easy to unit test. The project should have at least one unit test.
 
 ### Requirements
 
