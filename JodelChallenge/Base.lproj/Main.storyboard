@@ -1,67 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wPf-Hx-VUr">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
-            <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="GZw-80-Ba9" kind="relationship" relationship="viewControllers" id="DCx-x8-hBl"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
-        </scene>
-        <!--Item-->
+        <!--Flickr Feed-->
         <scene sceneID="vve-ha-RJW">
             <objects>
-                <collectionViewController id="GZw-80-Ba9" customClass="FeedViewController" customModule="JodelChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Flickr Feed" id="GZw-80-Ba9" customClass="FeedViewController" customModule="JodelChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Je6-1H-LZ7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="50W-nZ-4zn">
-                            <size key="itemSize" width="50" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="50W-nZ-4zn">
+                            <size key="itemSize" width="300" height="244"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedCell" id="HNq-Nl-u9j" customClass="FeedCell" customModule="JodelChallenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="45" y="0.0" width="300" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="244"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-oE-nWL">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-oE-nWL">
+                                            <rect key="frame" x="4" y="4" width="292" height="200"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="52Q-ef-eGU">
+                                            <rect key="frame" x="4" y="208" width="292" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="C58-kP-RqE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstItem="gBN-oE-nWL" firstAttribute="top" secondItem="HNq-Nl-u9j" secondAttribute="top" id="a0v-Wd-JhM"/>
-                                    <constraint firstItem="gBN-oE-nWL" firstAttribute="leading" secondItem="HNq-Nl-u9j" secondAttribute="leading" id="nSn-Ww-eB7"/>
-                                    <constraint firstAttribute="trailing" secondItem="gBN-oE-nWL" secondAttribute="trailing" id="qhT-oS-fhh"/>
-                                    <constraint firstAttribute="bottom" secondItem="gBN-oE-nWL" secondAttribute="bottom" id="qrn-bi-MTC"/>
+                                    <constraint firstItem="52Q-ef-eGU" firstAttribute="top" secondItem="gBN-oE-nWL" secondAttribute="bottom" constant="4" id="4OA-hW-cUn"/>
+                                    <constraint firstAttribute="trailing" secondItem="52Q-ef-eGU" secondAttribute="trailing" constant="4" id="O0O-6E-A1B"/>
+                                    <constraint firstItem="52Q-ef-eGU" firstAttribute="leading" secondItem="HNq-Nl-u9j" secondAttribute="leading" constant="4" id="UI1-yx-KS8"/>
+                                    <constraint firstItem="gBN-oE-nWL" firstAttribute="top" secondItem="HNq-Nl-u9j" secondAttribute="top" constant="4" id="a0v-Wd-JhM"/>
+                                    <constraint firstAttribute="bottom" secondItem="52Q-ef-eGU" secondAttribute="bottom" constant="4" id="hgQ-6l-zh2"/>
+                                    <constraint firstItem="gBN-oE-nWL" firstAttribute="leading" secondItem="HNq-Nl-u9j" secondAttribute="leading" constant="4" id="nSn-Ww-eB7"/>
+                                    <constraint firstAttribute="trailing" secondItem="gBN-oE-nWL" secondAttribute="trailing" constant="4" id="qhT-oS-fhh"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="gBN-oE-nWL" id="T5b-K3-bfF"/>
+                                    <outlet property="titleLabel" destination="52Q-ef-eGU" id="Ahw-5U-hMI"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -70,11 +65,85 @@
                             <outlet property="delegate" destination="GZw-80-Ba9" id="sDL-yF-Dy1"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="q7C-rv-ccb"/>
+                    <navigationItem key="navigationItem" id="Xky-vB-V1V"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Rh-DI-kkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="-174"/>
+            <point key="canvasLocation" x="1512" y="-173"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="wIZ-mu-9Zf">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="jTR-Wd-XCE" customClass="DetailsViewController" customModule="JodelChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ybf-8T-ZHD"/>
+                        <viewControllerLayoutGuide type="bottom" id="eQM-b6-2Vf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LXI-i5-v7s">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I4R-PT-euj">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I4R-PT-euj" firstAttribute="top" secondItem="LXI-i5-v7s" secondAttribute="top" id="NSo-G1-iFB"/>
+                            <constraint firstAttribute="trailing" secondItem="I4R-PT-euj" secondAttribute="trailing" id="OWe-m7-I6x"/>
+                            <constraint firstItem="I4R-PT-euj" firstAttribute="leading" secondItem="LXI-i5-v7s" secondAttribute="leading" id="b3u-oX-n2W"/>
+                            <constraint firstAttribute="bottom" secondItem="I4R-PT-euj" secondAttribute="bottom" id="b8Y-sT-NP8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="I4R-PT-euj" id="fG6-eL-UIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Img-lF-u0I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="-173"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8nP-qW-1eP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wPf-Hx-VUr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="q7C-rv-ccb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Lzl-8C-NXb">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="PrimaryColor"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GZw-80-Ba9" kind="relationship" relationship="rootViewController" id="gej-AW-6dw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cF2-Dw-B13" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="-174.06296851574214"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="PrimaryColor">
+            <color red="1" green="0.7290000319480896" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
