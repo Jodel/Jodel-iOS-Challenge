@@ -14,6 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        guard let flikrAPIKey = Bundle.main.object(forInfoDictionaryKey: "FlickrAPIKey") as? String,
+              let flicrAPISecret = Bundle.main.object(forInfoDictionaryKey: "FlickrAPISecret") as? String else {
+            debugPrint("Unable to initialize FlickrKit API key and secret.")
+            return true
+        }
+        
+        FlickrKit.shared().initialize(withAPIKey: flikrAPIKey, sharedSecret: flicrAPISecret)
+
         return true
     }
 }
