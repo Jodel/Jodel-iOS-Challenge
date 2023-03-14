@@ -50,9 +50,16 @@ Use Auto Layout when possible.
 
 • Main feed should be reloadable by pull to refresh control
 
+### Send us your work!
+
+Right click (Ctrl-Click with a single button mouse) on the project's root folder and choose compress.
+A zip file will be created with the compressed contents of the project folder.
+
+Just send us an email at [talent@jodel.com](mailto:talent@jodel.com) with attached `.zip` file.
+
+#
 
 *Pssst... [here's](https://github.com/raywenderlich/swift-style-guide) an amazing style guide for Swift*
 
-**Good luck**!
-
+*Good Luck!*
 
