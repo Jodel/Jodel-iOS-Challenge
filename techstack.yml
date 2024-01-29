@@ -1,0 +1,79 @@
+repo_name: Jodel/Jodel-iOS-Challenge
+report_id: 427410bad487a8b8f8f9503ca57a8b4e
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-29T10:49:12+00:00'
+requested_by: igormagurean
+provider: github
+branch: master
+detected_tools_count: 6
+tools:
+- name: Objective-C
+  description: The primary programming language you use when writing software for
+    OS X and iOS
+  website_url: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1008/xcode.png
+  detection_source_url: https://github.com/Jodel/Jodel-iOS-Challenge
+  detection_source: Repo Metadata
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/Jodel/Jodel-iOS-Challenge
+  detection_source: Repo Metadata
+- name: Swift
+  description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
+  website_url: https://developer.apple.com/swift/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source_url: https://github.com/Jodel/Jodel-iOS-Challenge
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Jodel/Jodel-iOS-Challenge
+  detection_source: Repo Metadata
+- name: CocoaPods
+  description: A dependency manager for Swift and Objective-C Cocoa projects
+  website_url: https://cocoapods.org/
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/service/2426/e1cbdef9d4b11484049a033886578e54_400x400.png
+  detection_source_url: https://github.com/Jodel/Jodel-iOS-Challenge/blob/master/Podfile.lock
+  detection_source: Podfile.lock
+  last_updated_by: Dmitry Ivanov
+  last_updated_on: 2020-02-27 11:50:37.000000000 Z
+- name: FlickrKit
+  description: FlickrKit is an iOS Objective-C library for accessing the Flickr API
+  package_url: https://cocoapods.org/pods/FlickrKit
+  version: 1.0.9
+  license: ''
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/package/cocoapods/image.png
+  detection_source_url: https://github.com/Jodel/Jodel-iOS-Challenge/blob/master/Podfile.lock
+  detection_source: Podfile
+  last_updated_by: Dmitry Ivanov
+  last_updated_on: 2021-02-16 12:44:53.000000000 Z
